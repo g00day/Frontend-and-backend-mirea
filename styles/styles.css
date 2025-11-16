@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+:root {
+    --general-text-align: center;
+
+    --round-border-radius: 50%;
+    
+    --header-padding: 15px;
+    --header-font-size: 20px;
+    
+    --heading-font-family: "Montserrat";
+    --secondary-font-family: "Open Sans";
+    --header-background-color: rgb(188, 255, 196);
+
+    --card-link-color: rgb(0, 206, 0);
+
+    --portfolio-top-margin: 25px;
+
+    --diary-section-width: 50%;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    position: relative;
+    text-align:var(--general-text-align);
+    font-family: var(--secondary-font-family); 
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.secondary-text {
+    color:rgb(175, 175, 175);
+}
+
+.secondary-text:hover {
+    color: black;
+    transition: 0.5s;
+}
+
+
+.cards-list {
+    position: relative;
+    top: 50px;
+    left: 15%;
+    width: 45%;
+}
+
+
+.card {
+    width: 300px;
+    height: auto;
+    padding: 15px; 
+    background-color: rgb(245, 245, 245);
+    border-radius: 3px;
+    margin-left:15px;
+}
+
+.card-image {
+    width: 275px;
+    height: 340px; 
+}
+
+h5.card-title {
+    font-family: var(--heading-font-family);
+    font-size: 25px;
+}
+
+.card-trigger {
+    font-family: var(--heading-font-family);
+    color: red;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.card .card-bottom {
+    padding: 20px;
+}
+
+.card-link {
+    text-decoration: none;
+    color: var(--card-link-color);
+    padding: 10px;
+    border: 1px solid var(--card-link-color);
+}
+
+.card-link:hover {
+    text-decoration: none;
+    color: white;
+    background-color: var(--card-link-color);
+    transition: 0.5s;
+}
+
+.articles {
+    position: relative;
+    top: 25px;
+    left:35%;
+    width: 60%;
+}
+
+article {
+    width:50%;
+}
+
+/* Стили диалогового окна */
+dialog {
+    border-radius: 3px;
+    border: 1px solid black;
+    font-family: var(--secondary-font-family);
+}
+
+dialog .modal-header {
+    font-family: var(--heading-font-family);
+}
+
+/* Портфолио */
+.portfolio-header {
+    margin-top: var(--portfolio-top-margin);
+}
+
+.portfolio-header-left img {
+    width: 350px;
+    height: 350px;
+    border-radius: var(--round-border-radius);
+}
+
+.portfolio-header-right, .portfolio-header-left {
+    display: inline-block;
+    position: relative;
+}
+
+.portfolio-header-right {
+    width: 30%;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.portfolio-header-right .title {
+    font-family: var(--heading-font-family);
+}
+
+.portfolio-header-right a {
+    margin-top: 15px;
+}
+
+.portfolio-skills {
+    position: relative;
+    top: 50px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.skills-list {
+    text-align: left;
+    margin-top: 10px;
+}
+
+.skills-list .skill {
+    border: 1px solid rgb(245, 245, 245);
+    border-radius: 3px;
+    padding: 25px;
+    margin-top: 10px;
+}
+
+.skills-list .skill:hover {
+    box-shadow: 5px 5px 5px rgb(245, 245, 245);
+    transition: 0.5s;
+}
+
+.projects {
+    position: relative;
+    top: 50px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.projects h2 {
+    margin-top: 50px;
+    font-family: var(--heading-font-family);
+}
+
+
+.project-list > .card {
+    display: inline-block;
+}
+
+/* Модальное окно на странице проектов */
+.project-dialog {
+    width: 25%;
+    text-align: center;
+}
+
+
+/* Стили для дневника */
+.events {
+    position: relative;
+    top: 50px;
+    margin: 0 auto;
+    width: var(--diary-section-width);
+    border: 1px solid rgb(237, 237, 237);
+    border-radius: 3px;
+    padding: 1%;
+}
+
+.event {
+    padding: 5px;
+}
+
+.event .date {
+    color: gray;
+    font-family: var(--secondary-font-family);
+}
+
+.courses {
+    position: relative;
+    top: 100px;
+    width: var(--diary-section-width);
+    margin: 0 auto;
+}
+
+.courses .course {
+    margin-top: 15px;
+    border: 1px solid rgb(237, 237, 237);
+    border-radius: 3px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.courses .course:hover {
+    transition: 0.5s;
+    background-color: rgb(249, 249, 249);
+}
