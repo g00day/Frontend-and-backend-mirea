@@ -1,33 +1,33 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arseniy Verkhovt</title>
+    <title>Арсений Верховт - Портфолио</title>
+    <meta name="description" content="Портфолио студента Арсения Верховта. Проекты, навыки и контакты.">
     <link rel="stylesheet" href="styles/styles.css">
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
-
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" aria-label="Основная навигация">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">Arseniy</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <a class="navbar-brand" href="index.html">Арсений</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Переключить навигацию">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="pages/projects.html">Проекты</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/news.html">Дневник</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/feedback.html">Обратная связь</a>
-                    </li>
-                </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="pages/projects.html" aria-current="page">Проекты</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/diary.html">Дневник</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/feedback.html">Обратная связь</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -35,80 +35,76 @@
 
     <main>
         <div class="portfolio">
-
-            <div class="portfolio-header">
+            <section class="portfolio-header" aria-labelledby="profile-heading">
                 <div class="portfolio-header-left">
-                    <img src="https://thumbs.dreamstime.com/b/default-profile-picture-avatar-photo-placeholder-vector-illustration-default-profile-picture-avatar-photo-placeholder-vector-189495158.jpg">
+                    <img src="https://thumbs.dreamstime.com/b/default-profile-picture-avatar-photo-placeholder-vector-illustration-default-profile-picture-avatar-photo-placeholder-vector-189495158.jpg" alt="Аватарка профиля Арсения Верховта">
                 </div>
                 <div class="portfolio-header-right">
-                    <h3 class="title">
+                    <h1 id="profile-heading" class="title">
                         Привет, я студент
-                    </h3>
+                    </h1>
                     <div class="group-name">
                         ЭФБО-08-24
                     </div>
                     <div class="secondary-text">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur veritatis ex minus. Deserunt nesciunt itaque perferendis odio corporis delectus, modi, maxime et at dicta magni dolorum distinctio, doloribus repellat recusandae.
                     </div>
-                    <p><a href="assets/Верхов Арсений Александрович.pdf" class="btn btn-primary" download>Резюме</a>
+                    <p><a href="assets/Верхов_Арсений_Александрович.pdf" class="btn btn-primary" download aria-label="Скачать резюме Арсения Верховта в формате PDF">Резюме</a></p>
                 </div>
-            </div>
+            </section>
 
-            <div class="portfolio-skills">
-                <h2>Навыки</h2>
+            <section class="portfolio-skills" aria-labelledby="skills-heading">
+                <h2 id="skills-heading">Навыки</h2>
                 <div class="skills-list">
                     <div class="skill">
-                        <div class="skill-name">HTML&CSS</div>
-                        <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                        <div class="skill-name" id="html-skill-label">HTML&CSS</div>
+                        <div class="progress" role="progressbar" aria-labelledby="html-skill-label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                             <div class="progress-bar text-bg-primary" style="width: 25%">25%</div>
                         </div>
                     </div>
                     <div class="skill">
-                        <div class="skill-name">
-                            JavaScript
-                        </div>
-                        <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                        <div class="skill-name" id="js-skill-label">JavaScript</div>
+                        <div class="progress" role="progressbar" aria-labelledby="js-skill-label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                             <div class="progress-bar text-bg-primary" style="width: 25%">25%</div>
                         </div>
                     </div>
                     <div class="skill">
-                        <div class="skill-name">
-                            Bootstrap
-                        </div>
-                        <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                        <div class="skill-name" id="bootstrap-skill-label">Bootstrap</div>
+                        <div class="progress" role="progressbar" aria-labelledby="bootstrap-skill-label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                             <div class="progress-bar text-bg-primary" style="width: 25%">25%</div>
                         </div>
                     </div>
                     <div class="skill">
-                        <div class="skill-name">
-                            React
-                        </div>
-                        <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                        <div class="skill-name" id="react-skill-label">React</div>
+                        <div class="progress" role="progressbar" aria-labelledby="react-skill-label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                             <div class="progress-bar text-bg-primary" style="width: 25%">25%</div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div class="projects">
-                <h2 class="title">Проекты</h2>
+            <section class="projects" aria-labelledby="projects-heading">
+                <h2 id="projects-heading" class="title">Проекты</h2>
                 <div class="projects-list">
                     <div class="card" style="width: 18rem;">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmaKKl794zmDPKk0sWdrW3HF-jIjyjmyMfZw&s" class="card-img-top" alt="...">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmaKKl794zmDPKk0sWdrW3HF-jIjyjmyMfZw&s" class="card-img-top" alt="Скриншот проекта">
                         <div class="card-body">
-                            <h5 class="card-title">Это</h5>
+                            <h3 class="card-title h5">Это</h3>
+                            <p class="card-text">Ущербный сайт</p>
+                            <a href="#" class="btn btn-primary">Посмотреть</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmaKKl794zmDPKk0sWdrW3HF-jIjyjmyMfZw&s" class="card-img-top" alt="Скриншот проекта">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Это</h3>
                             <p class="card-text">Ущербный сайт</p>
                             <a href="#" class="btn btn-primary">Посмотреть</a>
                         </div>
                     </div>
                 </div>
-            </div>
-
-
+            </section>
         </div>
-
-        
-
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>

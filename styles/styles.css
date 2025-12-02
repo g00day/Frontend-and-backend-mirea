@@ -19,6 +19,13 @@
     --portfolio-top-margin: 25px;
 
     --diary-section-width: 50%;
+
+    /* Переменные размеров для адаптивности */
+    --desktop-bg-width: 1920px;
+    --desktop-md-width: 1366px;
+    --desktop-sm-width: 1024px;
+    --tablet-width: 768px;
+    --mobile-width: 360px
 }
 
 
@@ -35,6 +42,12 @@ main {
 
 h1 {
     font-size: 40px;
+}
+
+input:focus {
+    outline: none; 
+    border-color: #0066cc; 
+    background: #e6f3ff;
 }
 
 .secondary-text {
@@ -178,7 +191,7 @@ dialog .modal-header {
 .projects {
     position: relative;
     top: 50px;
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -188,8 +201,9 @@ dialog .modal-header {
 }
 
 
-.project-list > .card {
+.projects-list > .card {
     display: inline-block;
+    margin-top:10px;
 }
 
 /* Модальное окно на странице проектов */
@@ -237,4 +251,71 @@ dialog .modal-header {
 .courses .course:hover {
     transition: 0.5s;
     background-color: rgb(249, 249, 249);
+}
+
+
+
+/* Реализация адаптивности */
+@media(max-width: 1920px) {
+
+}
+
+@media(max-width: 1366px) {
+
+}
+
+@media(max-width: 1024px) {
+    .portfolio-header {
+        width: 100%;
+    }
+    .portfolio-header .portfolio-header-right {
+        width: 50%;
+    }
+
+    .portfolio-skills {
+        width: 85%;
+    }
+    .projects {
+        width: 100%;
+    }
+    section.events {
+        width: 80%;
+    }
+    section.courses {
+        width:  80%
+    }
+}
+
+@media(max-width: 768px) {
+    .portfolio-header .portfolio-header-right {
+        width: 95%;
+        text-align: center;
+    }
+    .portfolio-skills {
+        width: 95%;
+    }
+    .card {
+        margin-top: 20px;
+        width: 100%;
+    }
+}
+
+@media(max-width: 425px) {
+    .portfolio-header-left {
+        width: 100%;
+    }
+    .portfolio-header-left img {
+        width: 80%;
+        height: auto;
+    }
+    section.events {
+        width: 90%;
+    }
+    section.courses {
+        width:  90%
+    }
+} 
+
+@media(max-width: 360px) {
+
 }
